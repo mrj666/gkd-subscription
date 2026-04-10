@@ -153,7 +153,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+          activityIds: 'com.xiaomi.market.business_ui.main.MarketTabActivity',
           matches: 'TextView[vid="view_skip_button"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/26628206',
         },
