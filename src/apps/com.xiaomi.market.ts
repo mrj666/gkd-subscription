@@ -142,5 +142,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '开屏广告-系统广告服务',
+      matchRoot: true,
+      fastQuery: true,
+      matchTime: 15000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+          matches: 'TextView[vid="view_skip_button"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/26628206',
+        },
+      ],
+    },
   ],
 });
