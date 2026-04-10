@@ -48,7 +48,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '关闭弹窗广告',
+      name: '全屏广告-webview弹窗',
       desc: '关闭瑞幸咖啡WebView弹窗广告',
       matchTime: 15000,
       actionMaximum: 1,
