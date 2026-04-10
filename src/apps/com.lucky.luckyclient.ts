@@ -46,5 +46,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '关闭弹窗广告',
+      desc: '关闭瑞幸咖啡WebView弹窗广告',
+      matchFilter: (n, m) => {
+        if (!m.ancestor(n, (a) => a.attr.vid === 'webview_dialog')) return false;
+        const w = n.attr.width, h = n.attr.height;
+        if (w < 80 || w > 110 || h < 80 || h > 110) return false;
+        if (!n.attr.visibleToUser) return false;
+        const rx = n.attr.left > 900;
+        const ty = n.attr.top < 700;
+        return rx && ty;
+      },
+      action: [{ type: 'clickCenter' }],
+      matchTime: 15000,
+      actionMaximum: 1,
+    },
   ],
 });
