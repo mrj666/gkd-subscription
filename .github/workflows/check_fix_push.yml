@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       ${{ github.event.head_commit.message!='chore(actions): check_format_lint' }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v6
 
