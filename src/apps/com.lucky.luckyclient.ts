@@ -49,29 +49,13 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-webview弹窗',
-      desc: '关闭瑞幸咖啡WebView弹窗广告',
-      matchTime: 15000,
-      actionMaximum: 1,
-      rules: [
-        {
-          activityIds: 'com.lucky.luckincoffee.MainActivity',
-          matches:
-            '@Image[width=93][height=93][visibleToUser=true] <<n [vid="webview_dialog"]',
-          action: 'clickCenter',
-        },
-      ],
-    },
-    {
-      key: 5,
-      name: '全屏广告-促销弹窗',
       desc: '匹配93x93关闭按钮，点击后执行返回键关闭轻椰拿铁促销弹窗',
       matchTime: 15000,
       actionMaximum: 1,
       rules: [
         {
           activityIds: 'com.lucky.luckincoffee.MainActivity',
-          matches:
-            '@Image[width=93][height=93][visibleToUser=true] <<n [vid="webview_dialog"]',
+          matches: '@Image[width=93][height=93][visibleToUser=true] <<n [vid="webview_dialog"]',
           action: 'back',
         },
       ],
