@@ -55,7 +55,8 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.lucky.luckincoffee.MainActivity',
-          matches: '@Image[width=93][height=93][visibleToUser=true] <<n [vid="webview_dialog"]',
+          matches:
+            '@Image[width=93][height=93][visibleToUser=true] <<n [vid="webview_dialog"]',
           action: 'back',
         },
       ],
